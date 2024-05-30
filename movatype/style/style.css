@@ -1,0 +1,143 @@
+*{box-sizing:border-box ;}
+.row::after{
+    clear: both;
+    content:"";
+    display: block;
+}
+.w-21{
+    width: 21%;
+    float: left;
+}
+.w-30{
+    width: 30%;
+    float: left;
+}
+.w-70{
+    width: 70%;
+    float: left;
+}
+.w-25{
+    width: 25%;
+    float: left;
+}
+#logo{
+    width:256px;
+    height: auto;
+    border: 3px solid #0d042d;
+    border-radius: 32px;
+}
+#reklama{
+  width: 80%;
+}
+html, body {
+padding: 0;
+margin: 0;
+font-family: Verdana, Tahoma, sans-serif;
+}
+body {
+color: #fff ;
+font-size: 1.1em;
+display: flex ;
+flex-direction : column;
+}
+main {
+display: flex;
+flex-direction : column ;
+}
+article {
+width: auto;
+background-color :#218cbe;
+flex: 2 2 12em;
+padding: 1em;
+}
+reklama{
+width: 21%;
+background-color :#455a64;
+text-align: center;
+
+}
+reklama img{
+    top: 70px;
+    padding-top: 30px;
+    position: sticky;
+}
+header h1{
+    font-size: 48px;
+}
+header {
+flex: 0 0 5em;
+text-align: center;
+font-size: large;
+}
+footer{
+    background-color :  white;
+    text-align: center;
+    font-size: 16px;
+    color:#0d042d;
+    padding: 0px; 
+}
+@media screen and (min-width:600px){
+body {
+min-height: 100vh;}
+main {
+flex-direction: row ;
+min-height: 1000 ;
+flex: 1 1 auto;
+}}
+.flex-container {
+display: flex;
+border: 0px #ccc solid;
+background-color: #3a57d8;
+align-self: center;
+justify-content: space-between;
+align-items: stretch;
+height: 3em;}
+#navigation{
+    position: sticky;
+    top:0px;
+}
+#navigation button{
+    width: 100%;
+    border-radius: 0px;
+    height:70px;
+    font-size: 30px;
+    background-color: aquamarine;
+    transition-duration: 0.3s;
+}
+#navigation button:hover {
+    background-color: #1fa6af;
+    color: white;
+  }
+#pink{
+    background-image: linear-gradient(red, yellow);
+}
+#yellow{
+    background-image: linear-gradient(yellow,rgb(42, 221, 42));
+}
+#green{
+    background-image: linear-gradient(rgb(42, 221, 42),rgb(53, 153, 246));
+}
+#blue{
+    background-image: linear-gradient(rgb(53, 153, 246),#5e54c5,white);
+}
+#article-index{
+    background-image: linear-gradient(rgb(86, 239, 86),white);
+    color:#0d042d;
+}
+#article-country{
+    background-image: linear-gradient(rgb(241, 150, 70),white);
+    color:#0d042d;
+}
+#article-standart{
+    background-image: linear-gradient(rgb(236, 236, 62),white);
+    color:#0d042d;
+}
+#article-course{
+    background-image: linear-gradient(rgb(235, 108, 169),white);
+    color:#0d042d;
+}
+#footer-index{
+    border-top: 4px solid black;
+    background-color:crimson;
+    color:#0d042d;
+}
